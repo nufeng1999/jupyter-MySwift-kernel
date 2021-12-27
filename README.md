@@ -1,16 +1,16 @@
-# MyTypeScript kernel for Jupyter
-[Example](https://github.com/nufeng1999/jupyter-MyTypeScript-kernel/blob/master/example/jupyter_MyTypeScript_readme.ipynb "Example")
+# MySwift kernel for Jupyter
+[Example](https://github.com/nufeng1999/jupyter-MySwift-kernel/blob/master/example/jupyter_MySwift_readme.ipynb "Example")
 * Make sure you have the following requirements installed:
-  * TypeScript
+  * Swift
   * jupyter
   * python 3
   * pip
 ### Step-by-step
 ```bash
-git clone https://github.com/nufeng1999/jupyter-MyTypeScript-kernel.git
-cd jupyter-MyTypeScript-kernel
+git clone https://github.com/nufeng1999/jupyter-MySwift-kernel.git
+cd jupyter-MySwift-kernel
 pip install -e . 
-cd jupyter_MyTypeScript_kernel && python3 install_MyTypeScript_kernel --user
+cd jupyter_MySwift_kernel && python3 install_MySwift_kernel --user
 # now you can start the notebook
 jupyter notebook
 ```
@@ -24,8 +24,10 @@ My minification kelnel of jupyter
 |[MyNodejs](https://github.com/nufeng1999/jupyter-MyNodejs-kernel)       |[MyPython](https://github.com/nufeng1999/jupyter-MyPython-kernel)       |
 |[MyVala](https://github.com/nufeng1999/jupyter-MyVala-kernel)           |[MyVBScript](https://github.com/nufeng1999/jupyter-MyVBScript-kernel)   |
 |[MyWolframScript](https://github.com/nufeng1999/jupyter-MyWLS-kernel)   |[MyVBScript](https://github.com/nufeng1999/jupyter-MyHtml-kernel)       |  
-|[MyTypeScript](https://github.com/nufeng1999/jupyter-MyTypeScript-kernel)|[MyPowerShell](https://github.com/nufeng1999/jupyter-MyPS-kernel)|
-|[MyBatch](https://github.com/nufeng1999/jupyter-MyBatch-kernel)| |
+|[MyTypeScript](https://github.com/nufeng1999/jupyter-MyTypeScript-kernel)|[MyPowerShell](https://github.com/nufeng1999/jupyter-MyPS-kernel)      |
+|[MyBatch](https://github.com/nufeng1999/jupyter-MyBatch-kernel)         |[MyLua](https://github.com/nufeng1999/jupyter-MyLua-kernel)             |
+|[MyPerl](https://github.com/nufeng1999/jupyter-MyPerl-kernel)           |[MyLua](https://github.com/nufeng1999/jupyter-MySwift-kernel)           |
+|[MyPHP](https://github.com/nufeng1999/jupyter-MyPHP-kernel)             |[MyLua](https://github.com/nufeng1999/jupyter-MyR-kernel)               |
   
 ----  
 ### Support label  
@@ -49,11 +51,13 @@ Example3:
   
 ----
 #### Compile and run code
-| label       |   value   | annotation                                                                                                       |
-| :------------ | :----------: | :----------------------------------------------------------------------------------------------------------------- |
+| label       |   value    | annotation                                                                                                       |
+| :---------- | :--------: | :--------------------------------------------------------------------------------------------------------------- |
 | cflags:     |            | Specifies the compilation parameters for C language compilation                                                  |
 | ldflags:    |            | Specify the link parameters for C language connection                                                            |
 | args:       |            | Specifies the parameters for the code file runtime                                                               |
+| switches    |            | Specifies the parameters for Swiftc                                                                              |
+| options     |            | Specifies the parameters for Perl,Lua                                                                            |
 | coptions:   |            | Code compilation time parameters of JVM platform                                                                 |
 | joptions:   |            | Code runtime parameters for the JVM platform                                                                     |
 | runprg:     |            | The code content will be run by the execution file specified by runprg                                           |
