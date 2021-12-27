@@ -1,5 +1,8 @@
-# MySwift kernel for Jupyter
-[Example](https://github.com/nufeng1999/jupyter-MySwift-kernel/blob/master/example/jupyter_MySwift_readme.ipynb "Example")
+![](https://img.shields.io/badge/Jupyter-Kernel-green?link=https://jupyter.org/&link=https://github.com/jupyter/jupyter/wiki/Jupyter-kernels) ![](https://img.shields.io/badge/MySwift-Kernel-orange) ![](https://img.shields.io/github/watchers/nufeng1999/jupyter-MySwift-kernel) <img alt="ViewCount" src="https://views.whatilearened.today/views/github/nufeng1999/jupyter-MySwift-kernel.svg">
+    <a href="https://github.com/nufeng1999/jupyter-MySwift-kernel"><img alt="GitHub Clones" src="https://img.shields.io/badge/dynamic/json?color=success&label=Clone&query=count&url=https://raw.githubusercontent.com/nufeng1999/jupyter-MySwift-kernel/master/clone.json&logo=github"></a>
+# MySwift kernel for Jupyter  
+  
+[Example](https://github.com/nufeng1999/jupyter-MySwift-kernel/blob/master/example/MySwift.ipynb "Example")
 * Make sure you have the following requirements installed:
   * Swift
   * jupyter
