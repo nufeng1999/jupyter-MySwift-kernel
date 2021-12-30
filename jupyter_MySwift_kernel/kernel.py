@@ -1307,7 +1307,7 @@ class MySwiftKernel(MyKernel):
     runfiletype='script'
     banner = "MySwift kernel.\n" \
              "Uses Swift, creates source code files and executables in temporary folder.\n"
-    kernelinfo="[MySwift]"
+    kernelinfo="[MySwift kernel]"
     main_head = "\n" \
             "\n" \
             "int main(List<String> arguments){\n"
