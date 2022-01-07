@@ -118,7 +118,7 @@ class MySwiftKernel(MyKernel):
             binary_filename=outfile
             index+=1
         args=[]
-        if magics!=None and len(self.addkey2dict(magics,'ccompiler'))>0:
+        if magics!=None and len(self.mymagics.addkey2dict(magics,'ccompiler'))>0:
             args = magics['ccompiler'] + orig_cflags +[source_filename] + orig_ldflags
         else:
             args = ['swiftc', source_filename] + ['-o', binary_filename]+ cflags  + ldflags
@@ -126,7 +126,7 @@ class MySwiftKernel(MyKernel):
         return self.mymagics.create_jupyter_subprocess(args,env=env,magics=magics),binary_filename,args
     def _exec_swiftc_(self,source_filename,magics):
         self.mymagics._logln('Generating executable file')
-        with self.new_temp_file(suffix='.out') as binary_file:
+        with self.mymagics.new_temp_file(suffix='.out') as binary_file:
             magics['status']='compiling'
             p,outfile,gcccmd = self.compile_with_swiftc(
                 source_filename, 
