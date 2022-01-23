@@ -1,4 +1,3 @@
-## %file:src/include.py
 from typing import Dict, Tuple, Sequence,List
 from plugins.ISpecialID import IStag,IDtag,IBtag,ITag
 from plugins._filter2_magics import Magics
@@ -7,7 +6,6 @@ class MyInclude(IStag):
     kobj=None
     def getName(self) -> str:
         # self.kobj._write_to_stdout("setKernelobj setKernelobj setKernelobj\n")
-        
         return 'MyInclude'
     def getAuthor(self) -> str:
         return 'Author'
@@ -62,7 +60,6 @@ class MyInclude(IStag):
             spacechar=' '
             if index1>0:
                 spacechar=line[0]
-            ## self.kobj._logln(magics['include']+" index1 "+str(index1))
             line=self.readcodefile(self,filename=magics['include'],spacecount=index1,spacechar=spacechar)
         return line
     def readcodefile(self,filename,spacecount=0,spacechar=' '):
@@ -70,6 +67,7 @@ class MyInclude(IStag):
         filecode=''
         codelist1=None
         # self.kobj._log(os.path.join(os.path.abspath(''),filename+"\n"))
+        filename=self.kobj.realpath(filename)
         if not os.path.exists(filename):
             return ''
         with open(os.path.join(os.path.abspath(''),filename), 'r',encoding="UTF-8") as codef1:
